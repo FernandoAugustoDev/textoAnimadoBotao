@@ -9,7 +9,7 @@
 - Treinando os conceitos de animação com texto e imagens dentro do botão
 
 <h3>
-    <a href="https://fernandoaugustodev.github.io/textoAnimadoBotao/" target="_blank" >Veja o Projeto</a>
+    <a href="https://fernandoaugustodev.github.io/textoAnimadoBotao/" target="__blank" >Veja o Projeto</a>
 </h3>
 
 ---
