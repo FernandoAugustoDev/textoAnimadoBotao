@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+body{
+    display: grid;
+    place-items: center;
+    background-color: #1f1e22;
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    height: 3.5rem;
+    width: 14rem;
+    padding: 0 2.5rem 0 1.375rem;
+    border: 0;
+    border-radius: 1.75rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(21, 196, 21);
+    cursor: pointer;
+}
+.text {
+    position: relative;
+    height: 3.5rem;
+    width: 7rem;
+    white-space: nowrap;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+}
+.text::before{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    content: "Enviar Messagem";
+    animation: textAnimation 10s infinite;
+}
+.uil{
+    animation: iconAnimation 10s infinite;
+}
+@keyframes textAnimation{
+    0% {transform: translate(0, -50%);}
+    9% {transform: translate(0, -50%);
+    content: "Enviar Messagem";}
+    10% {transform: translate(0, -50%);
+    content: "Enviando ...";}
+    30% {transform: translate(0, -50%);}
+    39.9% {transform: translate(0, 100px);}
+    40% {transform: translate(300px, 100px);
+    content: "Enviando ...";}
+    40.1% {transform: translate(0, -60px);
+    content: "Enviado";}
+    40.2% {transform: translate(10px, -50px);}
+    45% {transform: translate(10px, -50%);}
+    95% {transform: translate(10px, -50%);
+    content: "Enviado";}
+    100% {transform: translate(0, -50%);
+    content: "Enviar Messagem";}
+    
+}
+@keyframes iconAnimation {
+    0% {transform: translate(0,0);}
+    10% {transform: translate(0,0);}
+    20% {transform: translate(-170px,0);}
+    30% {transform: translate(-170px,0);}
+    40% {transform: translate(250px,0) scale(2);}
+    40.1% {transform: translate(250px, -60px) scale(1);}
+    40.2% {transform: translate(34px, -60px);}
+    45% {transform: translate(-170px,0);}
+    95% {transform: translate(-170px,0);}
+    100% {transform: translate(0,0);}
+
+}
+button{
+    overflow: hidden;
+}
